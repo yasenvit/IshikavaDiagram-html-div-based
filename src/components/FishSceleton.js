@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 
 function fishScale (itemsQty, H) {
   let W = H*1.8
-  let F =`${((H-20)/(itemsQty*4+6))}`
+  let backgroundColor = '#FDF9ED'
   return (
   {
   fishPan : {
     display: 'flex',
     flexDirection:'row',
-    backgroundColor: '#FDF9ED',
+    backgroundColor: backgroundColor,
     height: `${H}px`,
     width: `${W}px`,
     fontSize: `0.7rem`,
@@ -45,7 +45,7 @@ function fishScale (itemsQty, H) {
 	  width: `${(H-20)/(itemsQty*4+6)*0.8}px`,
 	  height: `${(H-20)/(itemsQty*4+6)}px`,
 	  textDecoration: 'underline',	
-	  background: 'linear-gradient(to top right, #FDF9ED calc(50% - 1px), #aaa, #FDF9ED calc(50% + 1px))'	
+	  background: `linear-gradient(to top right, ${backgroundColor} calc(50% - 1px), #aaa, ${backgroundColor} calc(50% + 1px))`	
 	},
 	boneTopFilled: {
     color: 'rgb(55, 55, 148)',	
@@ -87,7 +87,7 @@ function fishScale (itemsQty, H) {
 	  width: `${(H-20)/(itemsQty*4+6)*0.8}px`,
 	  height: `${(H-20)/(itemsQty*4+6)}px`,
 	  textDecoration: 'underline',	
-	  background: 'linear-gradient(to top left, #FDF9ED calc(50% - 1px), #aaa, #FDF9ED calc(50% + 1px))'	
+	  background: `linear-gradient(to top left, ${backgroundColor} calc(50% - 1px), #aaa, ${backgroundColor} calc(50% + 1px))`
 	},	
 	boneBottomFilled: {	
 	  color: 'rgb(55, 55, 148)',	
