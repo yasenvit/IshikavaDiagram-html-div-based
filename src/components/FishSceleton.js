@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-
 function fishScale (itemsQty, H) {
   let W = H*1.7
   let F =`${((H-20)/(itemsQty*4+6))}`
@@ -19,12 +18,14 @@ function fishScale (itemsQty, H) {
     justifyContent: 'center'
   },
   title: {
-    textAlign: "center",
+    verticalAlign: 'middle',
+    textAlign: 'center',
     border:"0.9px solid lightseagreen",
     textAlign: 'center',
     fontSize: '9px',
     padding: '2px',
-    color: 'lightbrown'
+    paddingBottom: '3px',
+    color: 'lightseagreen'
   },
 	site: {	
 	  display: 'flex',	
@@ -216,7 +217,7 @@ let fishDataSample = [
 
 export default class FishSceleton extends Component {
   state = {
-    topic : 'Here is Ishikava Diagram Problem',
+    topic : 'Problem or Goal',
     fishData: fishDataSample
   }
 
