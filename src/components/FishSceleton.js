@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 function fishScale (itemsQty, H) {
-  let W = H*1.7
+  let W = H*1.8
   let F =`${((H-20)/(itemsQty*4+6))}`
   return (
   {
@@ -11,7 +11,7 @@ function fishScale (itemsQty, H) {
     backgroundColor: '#FDF9ED',
     height: `${H}px`,
     width: `${W}px`,
-    fontSize: `0.6rem`,
+    fontSize: `0.7rem`,
     padding: '10px',
     border: '1px solid  rgb(240, 240, 240)',
     alignItems: 'center',
@@ -22,7 +22,7 @@ function fishScale (itemsQty, H) {
     textAlign: 'center',
     border:"0.9px solid lightseagreen",
     textAlign: 'center',
-    fontSize: '9px',
+    fontSize: '14px',
     padding: '2px',
     paddingBottom: '3px',
     color: 'lightseagreen'
@@ -109,7 +109,7 @@ function fishScale (itemsQty, H) {
 	header: {	
 	  width: `${(H-20)/(itemsQty*4+6)*0.8}px`,
 	  height: `${(H-20)/(itemsQty*4+6)*2}px`,
-	  fontSize: '0.7rem',	
+	  fontSize: '1rem',	
     color: 'lightseagreen',
   }	
 }	)}	
@@ -174,18 +174,18 @@ let fishDataSample = [
       {name: "Bone_7-4"},
       {name: "Bone_7-5"},
       {name: "Bone_7-6"},
-      {name: "Bone_7-7"},
-      {name: "Bone_7-8"},
-      {name: "Bone_7-9"},
-      {name: "Bone_7-10"},
-      {name: "Bone_7-11"},
-      {name: "Bone_7-12"},
-      {name: "Bone_7-13"},
-      {name: "Bone_7-14"},
-      {name: "Bone_7-15"},
-      {name: "Bone_7-16"},
-      {name: "Bone_7-17"},
-      {name: "Bone_7-18"},
+      // {name: "Bone_7-7"},
+      // {name: "Bone_7-8"},
+      // {name: "Bone_7-9"},
+      // {name: "Bone_7-10"},
+      // {name: "Bone_7-11"},
+      // {name: "Bone_7-12"},
+      // {name: "Bone_7-13"},
+      // {name: "Bone_7-14"},
+      // {name: "Bone_7-15"},
+      // {name: "Bone_7-16"},
+      // {name: "Bone_7-17"},
+      // {name: "Bone_7-18"},
     ]
   },
   {
@@ -305,7 +305,7 @@ export default class FishSceleton extends Component {
   }
 
   getfishScale = (itemsQty)=> {
-    let scale = itemsQty<=6?fishScale(itemsQty,300):itemsQty<=12?fishScale(itemsQty,350):fishScale(itemsQty, 375)
+    let scale = itemsQty<=6?fishScale(itemsQty,400):itemsQty<=12?fishScale(itemsQty,450):fishScale(itemsQty, 550)
     return scale
   } 
   render() {
