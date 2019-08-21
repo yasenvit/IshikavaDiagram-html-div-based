@@ -1,0 +1,40 @@
+[ {
+    "parent": "Bone_1",
+    "children":
+        [
+            {"name": "Bone_1-1"},
+            {"name": "Bone_1-2"},
+            {"name": "Bone_1-3"}
+        ]
+    },
+    {
+        "parent": "Bone_2",
+        "children":
+        [
+            {"name": "Bone_2-1"},
+            {"name": "Bone_2-2"},
+            {"name": "Bone_2-3"},
+            {"name": "Bone_2-4"}
+        ]
+    },
+    {
+        "parent": "Bone_3",
+        "children":
+            [
+                {"name": "Bone_3-1"},
+                {"name": "Bone_3-2"},
+            ]
+    },
+    {
+        "parent": "Bone_4",
+        "children":
+            [
+                {"name": "Bone_4-1"},
+                {"name": "Bone_4-2"},
+                {"name": "Bone_4-3"},
+                {"name": "Bone_4-4"},
+                {"name": "Bone_4-5"},
+                {"name": "Bone_4-6"}
+            ]
+    }
+]
