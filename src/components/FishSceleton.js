@@ -118,9 +118,9 @@ let fishDataSample = [
   {
     parent: "Bone_1",
     children: [
-      {name: "Bone_1-1"},
-      {name: "Bone_1-2"},
-      {name: "Bone_1-3"}
+      // {name: "Bone_1-1"},
+      // {name: "Bone_1-2"},
+      // {name: "Bone_1-3"}
     ]
   },
   {
@@ -135,8 +135,8 @@ let fishDataSample = [
   { 
     parent: "Bone_3",
     children: [
-      {name: "Bone_3-1"},
-      {name: "Bone_3-2"},
+      // {name: "Bone_3-1"},
+      // {name: "Bone_3-2"},
     ]
   },
   {
@@ -315,8 +315,10 @@ export default class FishSceleton extends Component {
     let lengthBone
     let fishStyle
     if(this.state.fishData) {
+      let count = 0
       this.state.fishData.map((item, index) => (
-        index%2===0?fishDataTop.push(item):fishDataBottom.push(item),
+        item && item.children.length>0?count=count+1:null,
+        item && item.children.length>0?count%2===0?fishDataTop.push(item):fishDataBottom.push(item):null,
         item.children.length>maxItems?maxItems=item.children.length:null
       ))
       lengthBone = maxItems*2+3
